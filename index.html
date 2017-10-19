@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<textarea type="text" id="tex"></textarea>
+		<button id="but">提交</button>
+		
+		<script type="text/javascript">
+			var tex=document.getElementById('tex');
+			var but=document.getElementById('but');
+			tex.oninput=function(){
+				if(tex.value.length<10){
+					but.onclick=function(){
+
+					}
+				}else{
+						but.disabled=true
+					}
+			}
+		</script>
+	</body>
+</html>
